@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Change Guesser</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	 <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+	 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body background="assets/images/coinwp.jpg">
+<div class="container">
+	<div class="jumbotron"> 
+		<h1>Change Guesser</h1>
+			<h3>Guess the right amount of change to win.</h3>
+	</div>
+	<div class= "col-md-3">
+		<h2>Instructions</h2>
+	</div>
+	
+
+	<div class= "col-md-4">
+
+		<h2>Select A Coin</h2>
+		<div class="coins">
+		<div id="yellowCoin"> <img src="assets/images/coin1.png" width="100px"; height="100px"></div>
+		<div id="blueCoin"><img src="assets/images/coin2.png"width="100px"; height="100px"></div>
+		<div id="redCoin"><img src="assets/images/coin3.png"width="100px"; height="100px"></div>
+		<div id="greenCoin"><img src="assets/images/coin4.png"width="100px"; height="100px"></div>
+		</div>
+	</div>
+	<div class= "col-md-3">
+		<h2>Scores</h2>
+			<div class="scoreBox">
+			<h4>Change Needed</h4>
+			<div id="compScore"></div>
+			</div>
+			<div class="scoreBox">
+			<h4>Your Change</h4>
+			<div id="playerScore"></div>
+			</div>
+			<div class="scoreBox">
+			<h4>Wins</h4>
+			<div id="wins"></div>
+			<h4>Losses</h4>
+			<div id="losses"></div>
+			<h4>High Score</h4>
+			<div id="highScore"></div>
+			</div>
+		
+	</div>
+
+<script src="assets/javascript/game.js"> </script>
+</div>
+</body>
+</html>
