@@ -45,14 +45,14 @@ function checkGame() {
 
 //click functions
 $('#yellowCoin').click(function(){
-	alert(coinValue1);
+	
 	playerScore=playerScore+coinValue1;
 	document.getElementById("playerScore").innerHTML = playerScore;
 	checkGame();
 	
 });
 $('#blueCoin').click(function(){
-	alert(coinValue2);
+	
 	playerScore=playerScore+coinValue2;
 	document.getElementById("playerScore").innerHTML = playerScore;
 	checkGame();
@@ -60,7 +60,7 @@ $('#blueCoin').click(function(){
 
 });
 $('#redCoin').click(function(){
-	alert(coinValue3);
+	
 	playerScore=playerScore+coinValue3;
 	document.getElementById("playerScore").innerHTML = playerScore;
 	checkGame();
@@ -68,7 +68,7 @@ $('#redCoin').click(function(){
 		
 });
 $('#greenCoin').click(function(){
-	alert(coinValue4);
+	
 	playerScore=playerScore+coinValue4;
 	document.getElementById("playerScore").innerHTML = playerScore;
 	checkGame();
