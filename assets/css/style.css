@@ -1,10 +1,30 @@
+
+h1{
+	font-weight: bolder;
+	color:#FFFFFF;
+}
 .col-md-4{
-	background-color: #ffffff;
+	background-color: #D0E6FF;
 	margin: 30px;
 	padding-bottom: 20px;
 	border-radius: 10px;
 }
 .col-md-3{
-	background-color: #ffffff;
+	background-color: #CAFFD8;
 	border-radius: 10px;
+}
+
+.scoreBox{
+	background-color: #FFA8A8;
+	border-radius: 10px;
+	padding:10px;
+	margin-top: 10px;
+}
+
+.col-md-6{
+		background-color: #D0E6FF;
+
+}
+.coins{
+	padding: 7px;
 }

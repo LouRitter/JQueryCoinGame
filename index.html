@@ -6,29 +6,33 @@
 	 <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
 	 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
-<body background="assets/images/coinwp.jpg">
+<body background="assets/images/coinwp.png">
 <div class="container">
-	<div class="jumbotron"> 
-		<h1>Change Guesser</h1>
-			<h3>Guess the right amount of change to win.</h3>
-	</div>
+		<h1>Money Guesser Game</h1>
+			
+	
 	<div class= "col-md-3">
 		<h2>Instructions</h2>
+		<p>Welcome to the Money Guessing Game! Each coin is worth a different value. Select a coin to add it to your change. If your change matches the Change Needed, you win! If you go over, you lose :(</p>
 	</div>
 	
 
-	<div class= "col-md-4">
+<div class= "col-md-4">
 
-		<h2>Select A Coin</h2>
-		<div class="coins">
-		<div id="yellowCoin"> <img src="assets/images/coin1.png" width="100px"; height="100px"></div>
-		<div id="blueCoin"><img src="assets/images/coin2.png"width="100px"; height="100px"></div>
-		<div id="redCoin"><img src="assets/images/coin3.png"width="100px"; height="100px"></div>
-		<div id="greenCoin"><img src="assets/images/coin4.png"width="100px"; height="100px"></div>
-		</div>
+	<div class="col-md-6">
+		<h4>Select A Coin</h4>
+	
+		<div id="yellowCoin" class="coins"> <img src="assets/images/coin1.png" width="110px"; height="110px"></div>
+		<div id="blueCoin" class="coins"><img src="assets/images/coin2.png"width="110px"; height="110px"></div>
+		<div id="redCoin" class="coins"><img src="assets/images/coin3.png"width="110px"; height="110px"></div>
+		<div id="greenCoin" class="coins"><img src="assets/images/coin4.png" width="110px"; height="110px"></div>
+		
 	</div>
-	<div class= "col-md-3">
-		<h2>Scores</h2>
+</div>
+	<div class= "col-md-2">
+			<div class="scoreBox">
+			<h2>Scores</h2>
+			</div>
 			<div class="scoreBox">
 			<h4>Change Needed</h4>
 			<div id="compScore"></div>
@@ -42,8 +46,6 @@
 			<div id="wins"></div>
 			<h4>Losses</h4>
 			<div id="losses"></div>
-			<h4>High Score</h4>
-			<div id="highScore"></div>
 			</div>
 		
 	</div>
