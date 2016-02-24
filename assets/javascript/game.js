@@ -2,31 +2,47 @@
 var wins=0;
 var losses=0;
 
+// <----------------- Declare coinValue variables here with initial values
+var coinValue1= Math.floor(Math.random() * (12 - 1 + 1) + 1); 
+var	coinValue2= Math.floor(Math.random() * (12 - 1 + 1) + 1);
+var	coinValue3= Math.floor(Math.random() * (12 - 1 + 1) + 1);
+var	coinValue4= Math.floor(Math.random() * (12 - 1 + 1) + 1);
+// <----------------- 
+
+// <----------------- Declare the score variables here with initial values
+var playerScore = 0;
+var compScore = 0;
+// <-----------------
+
 function startGame () {
-var compScore= Math.floor(Math.random() * (120 - 19 + 1) + 19);
-var playerScore=0;
+ 	compScore= Math.floor(Math.random() * (120 - 19 + 1) + 19); // <------ Take off all the var keywords now that we declared at top.
+	playerScore=0;
 
-
-	var coinValue1= Math.floor(Math.random() * (12 - 1 + 1) + 1);
-	var coinValue2= Math.floor(Math.random() * (12 - 1 + 1) + 1);
-	var coinValue3= Math.floor(Math.random() * (12 - 1 + 1) + 1);
-	var coinValue4= Math.floor(Math.random() * (12 - 1 + 1) + 1);
+	coinValue1= Math.floor(Math.random() * (12 - 1 + 1) + 1); // <------ Take off all the var keywords now that we declared at top.
+	coinValue2= Math.floor(Math.random() * (12 - 1 + 1) + 1);
+	coinValue3= Math.floor(Math.random() * (12 - 1 + 1) + 1);
+	coinValue4= Math.floor(Math.random() * (12 - 1 + 1) + 1);
 
 	document.getElementById("compScore").innerHTML = compScore;
 	document.getElementById("playerScore").innerHTML = playerScore;
 //assign random score 
 
-	function checkGame() {
-		if (playerScore==compScore){
-			wins++;
-			document.getElementById("wins").innerHTML = wins;
-			startGame();
-		}else if(playerScore>compScore){
-			losses++
-			document.getElementById("losses").innerHTML = losses;
-			startGame();
-		}
-	};
+}; // <-------------- startGame shouldn't extend over other functions. It should stop here. 
+
+function checkGame() {
+	if (playerScore==compScore){
+		wins++;
+		document.getElementById("wins").innerHTML = wins;
+		startGame();
+	}else if(playerScore>compScore){
+		losses++
+		document.getElementById("losses").innerHTML = losses;
+		startGame();
+	}
+}; 
+
+
+
 //click functions
 $('#yellowCoin').click(function(){
 	alert(coinValue1);
@@ -57,7 +73,7 @@ $('#greenCoin').click(function(){
 	document.getElementById("playerScore").innerHTML = playerScore;
 	checkGame();
 });
-};
+
 
 startGame();
 
