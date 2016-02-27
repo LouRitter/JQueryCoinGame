@@ -5,6 +5,9 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	 <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
 	 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	 <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	 <link href='https://fonts.googleapis.com/css?family=Dosis:600' rel='stylesheet' type='text/css'>
 </head>
 <body background="assets/images/coinwp.png">
 <div class="container">
@@ -13,7 +16,15 @@
 	
 	<div class= "col-md-3">
 		<h2>Instructions</h2>
-		<p>Welcome to the Money Guessing Game! Each coin is worth a different value. Select a coin to add it to your change. If your change matches the Change Needed, you win! If you go over, you lose :(</p>
+		<p>Welcome to the Money Guesser Game. </p>
+		<br>
+		<p>The object of the game is to match "Your Money" to "Money Needed".</p>
+		<br>
+		<p>Each coin is tied to a value of either a penny, a nickel, a dime, or a quarter. Click a coin to add it to "Your Money".</p>
+		<br>
+		<p>Each dollar is associated a random number from 1-10. Click a dollar to add add it to "Your Money".</p>
+		<br>
+		<p>If you go over, You Lose! Match "Your Money" to "Money Needed" and you Win!</p>
 	</div>
 	
 
@@ -22,26 +33,31 @@
 	<div class="col-md-6">
 		<h4>Select A Coin</h4>
 	
-		<div id="yellowCoin" class="coins"> <img src="assets/images/coin1.png" width="110px"; height="110px"></div>
-		<div id="blueCoin" class="coins"><img src="assets/images/coin2.png"width="110px"; height="110px"></div>
-		<div id="redCoin" class="coins"><img src="assets/images/coin3.png"width="110px"; height="110px"></div>
-		<div id="greenCoin" class="coins"><img src="assets/images/coin4.png" width="110px"; height="110px"></div>
+		<div id="yellowCoin" class="coins"> <img src="assets/images/coin1.png" width="90px"; height="90px"></div>
+		<div id="blueCoin" class="coins"><img src="assets/images/coin2.png"width="90px"; height="90px"></div>
+		<div id="redCoin" class="coins"><img src="assets/images/coin3.png"width="90px"; height="90px"></div>
+		<div id="greenCoin" class="coins"><img src="assets/images/coin4.png" width="90px"; height="90px"></div>
 		
+	</div>
+	<div class="col-md-6">
+		<h4>Select A Bill</h4>
+		<div class="dollars">
+		<div id="yellowBill"><img src="assets/images/dollar1.png" width="150px" height="110px"></div>
+		<div id="blueBill"><img src="assets/images/dollar2.png" width="150px" height="110px"></div>
+		<div id="redBill"><img src="assets/images/dollar3.png" width="150spx" height="110px"></div>
+		<div id="greenBill"><img src="assets/images/dollar4.png" width="150px" height="110px"></div>
+		</div>
 	</div>
 </div>
 	<div class= "col-md-2">
 			<div class="scoreBox">
 			<h2>Scores</h2>
-			</div>
-			<div class="scoreBox">
-			<h4>Change Needed</h4>
+			<h4>Money Needed</h4>
 			<div id="compScore"></div>
-			</div>
-			<div class="scoreBox">
-			<h4>Your Change</h4>
+			<h4>Your Money</h4>
 			<div id="playerScore"></div>
 			</div>
-			<div class="scoreBox">
+			<div id="scoreBox3">
 			<h4>Wins</h4>
 			<div id="wins"></div>
 			<h4>Losses</h4>

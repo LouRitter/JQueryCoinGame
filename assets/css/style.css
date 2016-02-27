@@ -2,23 +2,36 @@
 h1{
 	font-weight: bolder;
 	color:#FFFFFF;
+	font-size: 36px;
+	padding-bottom: 10px;
+}
+h2{
+	font-size: 24px;
+	padding-bottom: 10px;
+}
+
+h4{
+	font-size: 18px;
 }
 .col-md-4{
 	background-color: #D0E6FF;
 	margin: 30px;
 	padding-bottom: 20px;
 	border-radius: 10px;
+	padding-top: 10px;
+
 }
 .col-md-3{
 	background-color: #CAFFD8;
 	border-radius: 10px;
+	padding: 10px;
 }
 
 .scoreBox{
-	background-color: #FFA8A8;
 	border-radius: 10px;
 	padding:10px;
 	margin-top: 10px;
+	background-color: #CAFFD8;
 }
 
 .col-md-6{
@@ -27,4 +40,36 @@ h1{
 }
 .coins{
 	padding: 7px;
+}
+
+#compScore{
+	font-weight: bolder;
+	font-size: 24px;
+	padding: 5px;	
+	padding-bottom: 20px;
+}
+#playerScore{
+	font-weight: bolder;
+	font-size: 24px;
+	padding: 5px;
+}
+#wins{
+	color:#00cc00;	
+	font-size: 16px;
+	font-weight: bold;
+}
+#losses{
+	color: #e60000;
+	font-size: 16px;
+	font-weight: bold;
+
+}
+#scoreBox3{
+	background-color: #ffff99;
+	border-radius: 10px;
+	padding:10px;
+	margin-top: 10px;
+}
+body{
+	font-family: 'Dosis', sans-serif;
 }
