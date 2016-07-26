@@ -83,18 +83,24 @@ function startGame () {
 	};
 	function checkGame() {
 		if (playerScore==result){
-			alert("Winner!")
 			wins++;
-			document.getElementById("wins").innerHTML = wins;
+			$("#winLose").html("<h1>You Win!</h1>");
+			$("#winTot").html(wins);
+			$("#winLoseModal").modal('show');
+			$("#wins").html(wins);
 			startGame();
+
 		}else if(playerScore>result){
-			alert("You Lose!")
 			losses++
-			document.getElementById("losses").innerHTML = losses;
+			$("#winLose").html("<h1>You Lose!</h1>");
+			$("#loseTot").html(losses);
+			$("#winLoseModal").modal('show');
+			$("#losses").html(losses);
 			startGame();
 		}
 	};
 //click functions
+
 $('#yellowCoin').click(function(){
 	playerScore=playerScore+coinValue1;
 	roundNumbertwo(playerScore,2);

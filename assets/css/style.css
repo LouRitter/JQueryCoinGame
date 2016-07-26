@@ -13,8 +13,13 @@ h2{
 h4{
 	font-size: 18px;
 }
+.container{
+	background-color:  rgba(150, 150, 150, 0.7);
+	margin-top: 20px;
+	border-radius: 10px;
+}
 .col-md-4{
-	background-color: #D0E6FF;
+	background-color:  rgba(102, 173, 255, 0.7);
 	margin: 30px;
 	padding-bottom: 20px;
 	border-radius: 10px;
@@ -22,7 +27,7 @@ h4{
 
 }
 .col-md-3{
-	background-color: #CAFFD8;
+	background-color: rgba(102, 255, 143, 0.7);
 	border-radius: 10px;
 	padding: 10px;
 }
@@ -31,11 +36,11 @@ h4{
 	border-radius: 10px;
 	padding:10px;
 	margin-top: 10px;
-	background-color: #CAFFD8;
+	background-color: rgba(102, 255, 143, 0.7);
 }
 
 .col-md-6{
-		background-color: #D0E6FF;
+	background-color:  rgba(102, 173, 255, 0.1);
 
 }
 .coins{
@@ -55,21 +60,73 @@ h4{
 }
 #wins{
 	color:#00cc00;	
-	font-size: 16px;
+	font-size: 32px;
 	font-weight: bold;
+	padding-left: 65px;
 }
 #losses{
 	color: #e60000;
-	font-size: 16px;
+	font-size: 32px;
 	font-weight: bold;
+	padding-left: 65px;
 
 }
 #scoreBox3{
-	background-color: #ffff99;
+	background-color: rgba(255, 255, 102, 0.7);
 	border-radius: 10px;
 	padding:10px;
 	margin-top: 10px;
 }
+
+#billSelect{
+	margin-left: 25px;
+	padding-bottom: 5px;
+}
+
+/*modal*/
+#winLoseModal{
+	background-color: rgba(112, 255, 102, 0.7);
+
+}
+
+.modal-content{
+	height: 400px;
+	padding:25px;
+	background-color:  rgba(102, 173, 255, 0.7);
+	align-content: center;
+
+}
+#winLose{
+	text-align: center;
+	padding-bottom: 15px;
+}
+
+#playBut{
+	margin-top: 50px;
+	margin-left: 20px;
+	width: 200px;
+	height: 50px;
+	font-size: 24px;
+}
+.modHead{
+	font-size: 24px;
+	color: #FFFFFF;
+}
+#winTot{
+	color: green;
+	padding-bottom: 30px;
+	padding-top: 15px;
+	text-align: center;
+	font-size: 32px;
+}
+#loseTot{
+	padding: 15px;
+	color: red;
+	text-align: center;
+	font-size: 32px;
+}
 body{
-	font-family: 'Dosis', sans-serif;
+	font-family: 'Dosis', sans-serif;	  
+	overflow:hidden;
+
 }
