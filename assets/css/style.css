@@ -3,7 +3,7 @@ h1{
 	font-weight: bolder;
 	color:#FFFFFF;
 	font-size: 36px;
-	padding-bottom: 10px;
+	padding-bottom: 5px;
 }
 h2{
 	font-size: 24px;
@@ -18,15 +18,15 @@ h4{
 	margin-top: 20px;
 	border-radius: 10px;
 }
-.col-md-4{
+.col-sm-5.col-md-5{
 	background-color:  rgba(102, 173, 255, 0.7);
 	margin: 30px;
 	padding-bottom: 20px;
 	border-radius: 10px;
-	padding-top: 10px;
+	padding-top: 5px;
 
 }
-.col-md-3{
+.col-md-3.visible-lg-block{
 	background-color: rgba(102, 255, 143, 0.7);
 	border-radius: 10px;
 	padding: 10px;
@@ -129,4 +129,21 @@ body{
 	font-family: 'Dosis', sans-serif;	  
 	overflow:hidden;
 
+}
+@media (max-width: 767px){
+	.col-sm-5.col-md-5{
+		height:440px;
+		margin-bottom: 0px
+	}
+	.col-xs-5.col-md-5{
+		height:350px;
+		margin-bottom: 0px
+	}
+}
+
+@media (min-width:767px) and (max-width: 990px){
+	.col-md-2{
+		width: 50%;
+		float:right;
+	}
 }
