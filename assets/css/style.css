@@ -139,6 +139,9 @@ body{
 		height:350px;
 		margin-bottom: 0px
 	}
+	.col-xs-5.col-md-5.bills{
+		float:right;
+	}
 }
 
 @media (min-width:767px) and (max-width: 990px){
