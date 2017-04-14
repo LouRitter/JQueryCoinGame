@@ -1,3 +1,5 @@
+#scoreMobile { display: none; }
+
 
 h1{
 	font-weight: bolder;
@@ -133,10 +135,10 @@ body{
 @media (max-width: 767px){
 	.col-sm-5.col-md-5{
 		height:35%;
-		margin-bottom: 0px
+		margin: 10px 0px 10px 0px; 
 	}
 	.col-xs-5.col-md-5{
-		height:35%;
+		height:25%;
 		margin-bottom: 0px
 	}
 	.scorebox3{
@@ -144,14 +146,17 @@ body{
 	}
 }
 @media (max-width: 547px){	
-	.coins{
-		width:15.5%;
-		height:25%;
+	.coins img{
+		width:70%;
+		height:55%;
 	}
 	.dollars img{
-		width: 40%;
-		height: 40%;
+		width: 90%;
+		height: 75%;
 	}
+
+	#scoreDesk { display: none; }
+    #scoreMobile { display: block; }
 
 }
 
@@ -163,7 +168,7 @@ body{
 	.col-sm-5.col-md-5{
 		height:460px;
 		width: 320px;
-		margin-bottom: 0px
+		margin-bottom: 0px;
 		float:right;
 	}
 	.col-xs-5.col-md-5{
@@ -172,3 +177,4 @@ body{
 	}
 
 }
+

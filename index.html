@@ -15,8 +15,16 @@
 <body background="assets/images/coinwp.png">
 <div class="container">
 		<h1>Money Guesser Game</h1>
-			
-	
+
+	<div class= "col-md-2" id="scoreMobile" >
+			<div class="scoreBox" >
+			<h2>Scores</h2>
+			<h4>Money Needed</h4>
+			<div id="compScore"></div>
+			<h4>Your Money</h4>
+			<div id="playerScore"></div>
+			</div>
+	</div>
 	<div class= "col-md-3 visible-lg-block">
 		<h2>Instructions</h2>
 		<p>Welcome to the Money Guesser Game. </p>
@@ -38,25 +46,27 @@
 		<div class="coins">
 		<div id="yellowCoin"> <img src="assets/images/coin1.png" width="90px"; height="auto"></div>
 		<br>
-		<div id="blueCoin" ><img src="assets/images/coin2.png"width="90px"; height="auto"></div>
+		<div id="blueCoin" ><img src="assets/images/coin2.png" width="90px"; height="auto"></div>
 		<br>
-		<div id="redCoin"><img src="assets/images/coin3.png"width="90px"; height="auto"></div>
+		<div id="redCoin"><img src="assets/images/coin3.png" width="90px"; height="auto"></div>
 		<br>
 		<div id="greenCoin"><img src="assets/images/coin4.png" width="90px"; height="auto"></div>
 		</div>
 	</div>
-	<div class=" co-xs-5 col-sm-5">
+	<div class=" col-xs-5 col-sm-5">
 		<h4 id="billSelect">Select A Bill</h4>
+		<div class="dollars">
 		<div id="yellowBill"><img src="assets/images/dollar1.png" width="150px" height="auto"></div>
 		<div id="blueBill"><img src="assets/images/dollar2.png" width="150px" height="auto"></div>
 		<div id="redBill"><img src="assets/images/dollar3.png" width="150spx" height="auto"></div>
 		<div id="greenBill"><img src="assets/images/dollar4.png" width="150px" height="110px"></div>
+		</div>
 	</div>
 	</div>
 </div>
-<div class="row">
-	<div class= "col-md-2">
-			<div class="scoreBox">
+
+	<div class= "col-md-2" >
+			<div class="scoreBox" id="scoreDesk">
 			<h2>Scores</h2>
 			<h4>Money Needed</h4>
 			<div id="compScore"></div>
@@ -69,8 +79,7 @@
 			<br>
 			<h4>Losses</h4>
 			<div id="losses"></div>
-	</div>
-</div>	
+	</div>	
 </div>
 </div>
 </div>
