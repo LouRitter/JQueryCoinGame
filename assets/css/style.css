@@ -132,11 +132,11 @@ body{
 }
 @media (max-width: 767px){
 	.col-sm-5.col-md-5{
-		height:360px;
+		height:35%;
 		margin-bottom: 0px
 	}
 	.col-xs-5.col-md-5{
-		height:330px;
+		height:30%;
 		margin-bottom: 0px
 	}
 	.scorebox3{
@@ -155,10 +155,20 @@ body{
 
 }
 
-@media (min-width:667px) and (max-width: 990px){
+@media (min-width:767px) and (max-width: 990px){
 	.col-md-2{
-		width: 50%;
+		width: 45%;
 		float:right;
+	}
+	.col-sm-5.col-md-5{
+		height:460px;
+		width: 320px;
+		margin-bottom: 0px
+		float:right;
+	}
+	.col-xs-5.col-md-5{
+		height:430px;
+		margin-bottom: 0px
 	}
 
 }
