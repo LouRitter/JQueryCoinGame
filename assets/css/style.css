@@ -132,19 +132,33 @@ body{
 }
 @media (max-width: 767px){
 	.col-sm-5.col-md-5{
-		height:440px;
+		height:360px;
 		margin-bottom: 0px
 	}
 	.col-xs-5.col-md-5{
-		height:350px;
+		height:330px;
 		margin-bottom: 0px
+	}
+	.scorebox3{
+		float:right;
+	}
+}
+@media (max-width: 547px){	
+	.coins{
+		width:20.5%;
+		height:25%;
+	}
+	.dollars img{
+		width: 40%;
+		height: 40%;
 	}
 
 }
 
-@media (min-width:767px) and (max-width: 990px){
+@media (min-width:667px) and (max-width: 990px){
 	.col-md-2{
 		width: 50%;
 		float:right;
 	}
+
 }
