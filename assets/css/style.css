@@ -136,7 +136,7 @@ body{
 		margin-bottom: 0px
 	}
 	.col-xs-5.col-md-5{
-		height:30%;
+		height:35%;
 		margin-bottom: 0px
 	}
 	.scorebox3{
@@ -145,7 +145,7 @@ body{
 }
 @media (max-width: 547px){	
 	.coins{
-		width:20.5%;
+		width:15.5%;
 		height:25%;
 	}
 	.dollars img{
